@@ -7,13 +7,13 @@ This application allows users to view products, add them to a cart, and manage t
 
 Features
 
-. Product List: View a list of products with images, names, and prices.
-. Add to Cart: Add products to the cart with quantity control.
-. Quantity Adjustment: Increase or decrease the quantity of items in the cart.
-. Filter by Price: Filter cart items based on a maximum price.
-. Sort by Price: Sort cart items by price in ascending or descending order.
-. Cart Summary: View total and average prices of items in the cart.
-. Clear Cart: Empty the cart with a single click.
+1. Product List: View a list of products with images, names, and prices.
+2. Add to Cart: Add products to the cart with quantity control.
+3. Quantity Adjustment: Increase or decrease the quantity of items in the cart.
+4. Filter by Price: Filter cart items based on a maximum price.
+5. Sort by Price: Sort cart items by price in ascending or descending order.
+6. Cart Summary: View total and average prices of items in the cart.
+7. Clear Cart: Empty the cart with a single click.
 
 
 How to Use
