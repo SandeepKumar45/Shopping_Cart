@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+}
+
+.product-page, .cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-list, .cart-items {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.product, .cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img, .cart-item img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.cart-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 24px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+.cart-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item img {
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+.cart-item span {
+    flex: 1;
+    text-align: center;
+}
+
+.filter-sort-controls {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    margin-bottom: 20px;
+    gap: 50px;
+}
+
+.filter-sort-controls label {
+    margin-right: 4px;
+}
+
+.filter-sort-controls input, 
+.filter-sort-controls select {
+    margin-bottom: 10px;
+}
+
+#clearCart {
+    background-color: red;
+    color: #ffffff;
+    border: 1px solid red;
+    border-radius: 4px;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+#clearCart:hover {
+    background-color: rgb(207, 37, 37);
+    cursor: pointer;
+}
+
+#back {
+    background-color: rgb(75, 75, 75);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+}
+
+#back:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.decrease {
+    padding: 1px 6px;
+}
+
+.increase {
+    padding: 1px 6px;
+}
+
+@media (min-width: 600px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-list {
+        gap: 40px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .cart-item img {
+        margin-bottom: 10px;
+    }
+
+    .cart-item span {
+        text-align: left;
+        width: 100%;
+    }
+}

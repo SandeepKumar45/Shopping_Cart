@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-page" id="productPage">
+            <h2>Products</h2>
+            <div class="product-list"></div>
+            <div class="cart-icon" onclick="showCartPage()">🛒</div>
+        </div>
+        <div class="cart-page" id="cartPage" style="display: none;">
+            <h2>Shopping Cart</h2>
+            <div class="filter-sort-controls">
+                <div>
+                    <label for="maxPrice">Filter by max price: </label>
+                <input type="number" id="maxPrice" placeholder="Enter max price" oninput="filterCart()">
+                </div>
+                
+                <div>
+                    <label for="sortOrder">Sort by price: </label>
+                <select id="sortOrder" onchange="sortCart()">
+                    <option value="">Select</option>
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+                </div>
+            </div>
+            <div class="cart-items"></div>
+            <p class="total-price">Total Price: ₹0.0</p>
+            <p class="average-price">Average Price: ₹0.0</p>
+            <button onclick="clearCart()" id="clearCart">Clear Cart</button>
+            <button onclick="showProductPage()" id="back">Back to Products</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
